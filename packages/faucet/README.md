@@ -19,7 +19,7 @@ yarn dev-start
 Advanced users that want to provide their custom config can start as follows:
 
 ```
-FAUCET_CREDIT_AMOUNT_COSM=10 \
+FAUCET_CREDIT_AMOUNT_SCRT=10 \
   FAUCET_CREDIT_AMOUNT_STAKE=5 \
   FAUCET_CONCURRENCY=3 \
   FAUCET_MNEMONIC="economy stock theory fatal elder harbor betray wasp final emotion task crumble siren bottom lizard educate guess current outdoor pair theory focus wife stone" \
