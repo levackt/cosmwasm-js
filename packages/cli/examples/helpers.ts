@@ -1,4 +1,4 @@
-interface Options {
+ interface Options {
   httpUrl: string;
   networkId: string;
   feeToken: string;
@@ -7,14 +7,14 @@ interface Options {
 };
 
 const defaultOptions: Options = {
-  httpUrl: "https://lcd.demo-07.cosmwasm.com",
+  httpUrl: "http://localhost:1317",
   networkId: "testing",
-  feeToken: "ucosm",
+  feeToken: "uscrt",
   gasPrice: 0.025,
-  bech32prefix: "cosmos",
+  bech32prefix: "enigma",
 }
 
-const defaultFaucetUrl = "https://faucet.demo-07.cosmwasm.com/credit";
+const defaultFaucetUrl = "http://localhost:1317/credit";
 
 const buildFeeTable = (feeToken: string, gasPrice: number): FeeTable => {
   const stdFee = (gas: number, denom: string, price: number) => {
@@ -102,5 +102,5 @@ const downloadWasm = async (url: string): Promise<Uint8Array> => {
   return r.data;
 }
 
-const getAttibute = (logs: readonly logs.Log[], key: string): string|undefined =>
+const getAttribute = (logs: readonly logs.Log[], key: string): string|undefined =>
   logs[0].events[0].attributes.find(x => x.key == key)?.value
