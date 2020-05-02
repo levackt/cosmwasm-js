@@ -1,5 +1,5 @@
 {
-  "name": "@cosmwasm/faucet",
+  "name": "@taariql/cosmwasm-faucet",
   "version": "0.7.7",
   "description": "The faucet",
   "author": "Ethan Frey <ethanfrey@users.noreply.github.com>",
