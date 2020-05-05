@@ -7,14 +7,14 @@
 };
 
 const defaultOptions: Options = {
-  httpUrl: "http://localhost:1317",
+  httpUrl: "https://lcd.demo-071.cosmwasm.com",
   networkId: "testing",
   feeToken: "uscrt",
   gasPrice: 0.025,
   bech32prefix: "enigma",
 }
 
-const defaultFaucetUrl = "http://localhost:1317/credit";
+const defaultFaucetUrl = "https://faucet.demo-071.cosmwasm.com/credit";
 
 const buildFeeTable = (feeToken: string, gasPrice: number): FeeTable => {
   const stdFee = (gas: number, denom: string, price: number) => {
